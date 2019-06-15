@@ -1,6 +1,6 @@
 //
 //  URLSession+Combine.swift
-//  SwiftUI-MVVM
+//  SwiftUI-Flux
 //
 //  Created by Yusuke Kita on 6/5/19.
 //  Copyright © 2019 Yusuke Kita. All rights reserved.

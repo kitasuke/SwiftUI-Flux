@@ -1,6 +1,6 @@
 //
 //  APIServiceError.swift
-//  SwiftUI-MVVM
+//  SwiftUI-Flux
 //
 //  Created by Yusuke Kita on 6/6/19.
 //  Copyright © 2019 Yusuke Kita. All rights reserved.

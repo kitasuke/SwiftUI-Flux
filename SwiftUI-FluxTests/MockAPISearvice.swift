@@ -1,6 +1,6 @@
 //
 //  MockAPISearvice.swift
-//  SwiftUI-MVVMTests
+//  SwiftUI-FluxTests
 //
 //  Created by Yusuke Kita on 6/7/19.
 //  Copyright © 2019 Yusuke Kita. All rights reserved.
