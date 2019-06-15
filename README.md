@@ -6,3 +6,9 @@ Flux enables us to have unidirectional data flow and make it testable. It's used
 
 Xcode 11.0+ Beta  
 Swift 5.1+
+
+## More examples
+
+See other architectures as well
+
+- MVVM: https://github.com/kitasuke/SwiftUI-MVVM
