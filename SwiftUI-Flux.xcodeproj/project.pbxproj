@@ -23,8 +23,6 @@
 		EC139DE422B4C53D003B138A /* MockTrackerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC139DE122B4C53D003B138A /* MockTrackerService.swift */; };
 		EC139DE522B4C53D003B138A /* MockAPISearvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC139DE222B4C53D003B138A /* MockAPISearvice.swift */; };
 		EC139DE622B4C53D003B138A /* MockExperimentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC139DE322B4C53D003B138A /* MockExperimentService.swift */; };
-		EC139DEA22B4C550003B138A /* RepositoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC139DE822B4C550003B138A /* RepositoryListViewModel.swift */; };
-		EC139DEB22B4C550003B138A /* RepositoryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC139DE922B4C550003B138A /* RepositoryDetailViewModel.swift */; };
 		EC139DF022B4C5CF003B138A /* RepositoryListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC139DEF22B4C5CF003B138A /* RepositoryListAction.swift */; };
 		EC139DF222B4C6AA003B138A /* RepositoryListActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC139DF122B4C6AA003B138A /* RepositoryListActionCreator.swift */; };
 		EC139DF422B4C6F0003B138A /* RepositoryListDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC139DF322B4C6F0003B138A /* RepositoryListDispatcher.swift */; };
@@ -65,8 +63,6 @@
 		EC139DE122B4C53D003B138A /* MockTrackerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockTrackerService.swift; sourceTree = "<group>"; };
 		EC139DE222B4C53D003B138A /* MockAPISearvice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAPISearvice.swift; sourceTree = "<group>"; };
 		EC139DE322B4C53D003B138A /* MockExperimentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockExperimentService.swift; sourceTree = "<group>"; };
-		EC139DE822B4C550003B138A /* RepositoryListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryListViewModel.swift; sourceTree = "<group>"; };
-		EC139DE922B4C550003B138A /* RepositoryDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryDetailViewModel.swift; sourceTree = "<group>"; };
 		EC139DEF22B4C5CF003B138A /* RepositoryListAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListAction.swift; sourceTree = "<group>"; };
 		EC139DF122B4C6AA003B138A /* RepositoryListActionCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListActionCreator.swift; sourceTree = "<group>"; };
 		EC139DF322B4C6F0003B138A /* RepositoryListDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListDispatcher.swift; sourceTree = "<group>"; };
@@ -136,15 +132,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		EC139DE722B4C550003B138A /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				EC139DE822B4C550003B138A /* RepositoryListViewModel.swift */,
-				EC139DE922B4C550003B138A /* RepositoryDetailViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		EC139DEC22B4C5A8003B138A /* Flux */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,7 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				EC139DEC22B4C5A8003B138A /* Flux */,
-				EC139DE722B4C550003B138A /* ViewModels */,
 				EC139DCD22B4C530003B138A /* Services */,
 				EC139DD422B4C531003B138A /* Views */,
 				EC139DC422B4C525003B138A /* Models */,
@@ -330,9 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC139DEA22B4C550003B138A /* RepositoryListViewModel.swift in Sources */,
 				EC139DDD22B4C531003B138A /* ExperimentService.swift in Sources */,
-				EC139DEB22B4C550003B138A /* RepositoryDetailViewModel.swift in Sources */,
 				EC139DDC22B4C531003B138A /* SearchRepositoryRequest.swift in Sources */,
 				EC139DF422B4C6F0003B138A /* RepositoryListDispatcher.swift in Sources */,
 				EC139DD822B4C531003B138A /* TrackerService.swift in Sources */,
