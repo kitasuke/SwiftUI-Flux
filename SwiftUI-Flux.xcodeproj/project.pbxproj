@@ -12,7 +12,6 @@
 		EC139DCB22B4C525003B138A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC139DC722B4C525003B138A /* User.swift */; };
 		EC139DCC22B4C525003B138A /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC139DC822B4C525003B138A /* Repository.swift */; };
 		EC139DD822B4C531003B138A /* TrackerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC139DCE22B4C530003B138A /* TrackerService.swift */; };
-		EC139DD922B4C531003B138A /* URLSession+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC139DCF22B4C530003B138A /* URLSession+Combine.swift */; };
 		EC139DDA22B4C531003B138A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC139DD022B4C530003B138A /* APIService.swift */; };
 		EC139DDB22B4C531003B138A /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC139DD122B4C530003B138A /* APIServiceError.swift */; };
 		EC139DDC22B4C531003B138A /* SearchRepositoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC139DD222B4C530003B138A /* SearchRepositoryRequest.swift */; };
@@ -52,7 +51,6 @@
 		EC139DC722B4C525003B138A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EC139DC822B4C525003B138A /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		EC139DCE22B4C530003B138A /* TrackerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerService.swift; sourceTree = "<group>"; };
-		EC139DCF22B4C530003B138A /* URLSession+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Combine.swift"; sourceTree = "<group>"; };
 		EC139DD022B4C530003B138A /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		EC139DD122B4C530003B138A /* APIServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
 		EC139DD222B4C530003B138A /* SearchRepositoryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRepositoryRequest.swift; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				EC139DCE22B4C530003B138A /* TrackerService.swift */,
-				EC139DCF22B4C530003B138A /* URLSession+Combine.swift */,
 				EC139DD022B4C530003B138A /* APIService.swift */,
 				EC139DD122B4C530003B138A /* APIServiceError.swift */,
 				EC139DD222B4C530003B138A /* SearchRepositoryRequest.swift */,
@@ -323,7 +320,6 @@
 				EC139DF022B4C5CF003B138A /* RepositoryListAction.swift in Sources */,
 				EC139DDB22B4C531003B138A /* APIServiceError.swift in Sources */,
 				EC139DC922B4C525003B138A /* SearchRepositoryResponse.swift in Sources */,
-				EC139DD922B4C531003B138A /* URLSession+Combine.swift in Sources */,
 				EC139DF222B4C6AA003B138A /* RepositoryListActionCreator.swift in Sources */,
 				EC139DCA22B4C525003B138A /* AnySubscription.swift in Sources */,
 				ECFE06C122B4C498001C2F76 /* AppDelegate.swift in Sources */,
