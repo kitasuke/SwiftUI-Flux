@@ -38,7 +38,7 @@ final class RepositoryListActionCreator {
         let responsePublisher = onAppearSubject
             .flatMap { [apiService] _ in
                 apiService.response(from: request)
-                    .catch { [weak self] error -> Publishers.Empty<SearchRepositoryResponse, Never> in
+                    .catch { [weak self] error -> Empty<SearchRepositoryResponse, Never> in
                         self?.errorSubject.send(error)
                         return .init()
                 }

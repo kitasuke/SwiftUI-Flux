@@ -21,7 +21,7 @@ struct RepositoryListView : View {
             List(store.repositories) { repository in
                 RepositoryListRow(repository: repository)
             }
-            .presentation($store.isErrorShown) { () -> Alert in
+            .alert(isPresented: $store.isErrorShown) { () -> Alert in
                 Alert(title: Text("Error"), message: Text(store.errorMessage))
             }
             .navigationBarTitle(Text("Repositories"))
