@@ -10,24 +10,24 @@ import Foundation
 import Combine
 import SwiftUI
 
-final class RepositoryListStore: BindableObject {
+final class RepositoryListStore: ObservableObject {
     static let shared = RepositoryListStore()
-    let willChange: AnyPublisher<Void, Never>
-    private let willChangeSubject = PassthroughSubject<Void, Never>()
+    let objectWillChange: AnyPublisher<Void, Never>
+    private let objectWillChangeSubject = PassthroughSubject<Void, Never>()
     
     private(set) var repositories: [Repository] = [] {
-        didSet { willChangeSubject.send(()) }
+        didSet { objectWillChangeSubject.send(()) }
     }
     var isErrorShown = false {
-        didSet { willChangeSubject.send(()) }
+        didSet { objectWillChangeSubject.send(()) }
     }
     var errorMessage = ""
     private(set) var shouldShowIcon = false {
-        didSet { willChangeSubject.send(()) }
+        didSet { objectWillChangeSubject.send(()) }
     }
     
     init(dispatcher: RepositoryListDispatcher = .shared) {
-        willChange = willChangeSubject.eraseToAnyPublisher()
+        objectWillChange = objectWillChangeSubject.eraseToAnyPublisher()
         
         dispatcher.register { [weak self] (action) in
             guard let strongSelf = self else { return }

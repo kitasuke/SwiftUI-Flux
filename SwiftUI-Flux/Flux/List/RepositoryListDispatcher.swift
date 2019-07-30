@@ -13,9 +13,11 @@ final class RepositoryListDispatcher {
     static let shared = RepositoryListDispatcher()
     
     private let actionSubject = PassthroughSubject<RepositoryListAction, Never>()
-    
+    private var cancellables: [AnyCancellable] = []
+
     func register(callback: @escaping (RepositoryListAction) -> ()) {
-        _ = actionSubject.sink(receiveValue: callback)
+        let actionStream = actionSubject.sink(receiveValue: callback)
+        cancellables += [actionStream]
     }
     
     func dispatch(_ action: RepositoryListAction) {

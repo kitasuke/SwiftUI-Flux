@@ -6,7 +6,7 @@ Flux enables us to have unidirectional data flow and make it testable. It's used
 
 ## Requirements
 
-Xcode 11.0 Beta 4+  
+Xcode 11.0 Beta 5+  
 Swift 5.1+
 
 ## More examples

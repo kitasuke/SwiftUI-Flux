@@ -48,7 +48,7 @@ final class RepositoryListActionCreator {
             .share()
             .subscribe(responseSubject)
         
-        _ = trackingSubject
+        let trackingDataStream = trackingSubject
             .sink(receiveValue: trackerService.log)
         
         let trackingStream = onAppearSubject
@@ -57,16 +57,17 @@ final class RepositoryListActionCreator {
         
         cancellables += [
             responseStream,
-            trackingStream
+            trackingDataStream,
+            trackingStream,
         ]
     }
     
     func bindActions() {
-        _ = responseSubject
+        let responseDataStream = responseSubject
             .map { $0.items }
             .sink(receiveValue: { [dispatcher] in dispatcher.dispatch(.updateRepositories($0)) })
         
-        _ = errorSubject
+        let errorDataStream = errorSubject
             .map { error -> String in
                 switch error {
                 case .responseError: return "network error"
@@ -75,15 +76,22 @@ final class RepositoryListActionCreator {
             }
             .sink(receiveValue: { [dispatcher] in dispatcher.dispatch(.updateErrorMessage($0)) })
         
-        _ = errorSubject
+        let errorStream = errorSubject
             .map { _ in }
             .sink(receiveValue: { [dispatcher] in dispatcher.dispatch(.showError) })
         
-        _ = onAppearSubject
+        let experimentStream = onAppearSubject
             .filter { [experimentService] _ in
                 experimentService.experiment(for: .showIcon)
             }
             .sink(receiveValue: { [dispatcher] in dispatcher.dispatch(.showIcon) })
+        
+        cancellables += [
+            responseDataStream,
+            errorDataStream,
+            errorStream,
+            experimentStream,
+        ]
     }
     
     func onAppear() {

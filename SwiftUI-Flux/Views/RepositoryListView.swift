@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct RepositoryListView : View {
-    @ObjectBinding var store: RepositoryListStore = .shared
+    @ObservedObject var store: RepositoryListStore = .shared
     private var actionCreator: RepositoryListActionCreator
     
     init(actionCreator: RepositoryListActionCreator = .init()) {
